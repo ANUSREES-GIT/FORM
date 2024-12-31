@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/montagu-slab" rel="stylesheet">
+                
 </head>
 <body>
 
@@ -16,11 +18,15 @@
                 <table>
                     <tr>
                         <td><label for="firstname">Name</label></td>
-                        <td><input type="text" id="firstname" placeholder="First Name" required></td>
+                        <td><input type="text" id="firstname" placeholder="First Name" required>
+                        <p id="hint" class="hint-text">Enter your name</p>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="surname">Surname</label></td>
-                        <td><input type="text" id="surname" placeholder="Surname" required></td>
+                        <td><input type="text" id="surname" placeholder="Surname" required>
+                        <p id="hint" class="hint-text">Enter your surname</p>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="mobile">Mobile Number</label></td>
@@ -28,15 +34,22 @@
                     </tr>
                     <tr>
                         <td><label for="email">Email</label></td>
-                        <td><input type="email" id="email" placeholder="*******@gmail.com" required></td>
+                        <td><input type="email" id="email" placeholder="*******@gmail.com" required>
+                        <img src="./img/check-removebg-preview.png" alt="" class="valid">
+                        <img src="./img/remove-removebg-preview.png" alt="" class="invalid">
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="password">Password</label></td>
-                        <td><input type="password" id="password" placeholder="Password" required></td>
+                        <td><input type="password" id="password" placeholder="Password" required>
+                        <p>Min. 8 characters with upper/lowercase letters, numbers, and special characters</p>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="confirm_password">Confirm Password</label></td>
-                        <td><input type="password" id="confirm_password" placeholder="Confirm Password" required></td>
+                        <td><input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                        <p>Enter same password</p>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="dob">DOB</label></td>
@@ -44,7 +57,10 @@
                     </tr>
                     <tr>
                         <td><label for="age">Age</label></td>
-                        <td><input type="number" id="age" required></td>
+                        <td><input type="number" id="age" min="18" max="100" required>
+                        <img src="./img/check-removebg-preview.png" alt="" class="valid">
+                        <img src="./img/remove-removebg-preview.png" alt="" class="invalid">
+                        </td>
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
@@ -104,7 +120,7 @@
                     </tr>
                     <tr>
                         <td><label for="institute">Institute Name</label></td>
-                        <td><input type="text" id="institute" placeholder="TAP Academy" disabled></td>
+                        <td><input type="text" id="institute" placeholder="TAP Academy" readonly></td>
                     </tr>
                     <tr>
                         <td><label for="comments">Comments</label></td>
