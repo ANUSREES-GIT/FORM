@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montagu Slab', sans-serif;
     background-color: #d3d1d179;
     margin: 0;
     padding: 0;
-    background-image: url(bg-plain.jpg);
+    background-image: url(./img/bg-plain.jpg);
     color: #000000;
     font-size: 15px;
     font-weight: bold;
@@ -58,6 +58,8 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 textarea {
@@ -77,8 +79,53 @@ input[type="submit"] {
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 4px;
+    
 }
 
 input[type="submit"]:hover {
     background-color: #7b239e;
 }
+
+input:focus {
+    background-color: #302e2e1a;
+}
+
+p{
+    display: none;
+}
+input:hover + p{
+    display: inline;
+    font-style: italic;
+    font-size: small;
+}
+
+img{
+    display: none;
+}
+input[type="Email"]:focus:valid ~ img.valid {
+    display: inline;
+    height: 25px;
+    width: 25x;
+
+}
+
+input[type="Email"]:focus:invalid ~ img.invalid {
+    display: inline;
+    height: 25px;
+    width: 25x;
+
+}
+
+
+input[type="age"]:focus:in-range:valid ~ img.valid{
+    display: inline;
+    height: 25px;
+    width: 25x;
+}
+
+input[type="age"]:focus:out-of-range:valid ~ img.invalid{
+    display: inline;
+    height: 25px;
+    width: 25x;
+}
+
